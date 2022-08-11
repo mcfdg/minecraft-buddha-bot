@@ -1,0 +1,15 @@
+[
+{
+  "modid": "mod_buddhaBot",
+  "name": "BuddhaBot",
+  "description": "The intelligent interactive boosting companion",
+  "version": "1.0.0",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [ "P0ss1Bo1" ],
+  "credits": "Created by P0ss1Bo1",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
