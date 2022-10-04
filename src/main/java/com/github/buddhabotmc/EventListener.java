@@ -42,21 +42,23 @@ public class EventListener {
 
         String playerName = messageInfo[0];
         String playerMessage = messageInfo[1];
+        String playerMessageLower = playerMessage.toLowerCase();
 
-        if (playerMessage.contains(Bot.COMMAND)) {
-            if (playerMessage.substring(playerMessage.indexOf(Bot.COMMAND)).length() < Bot.COMMAND.length() + 1) {
-                Bot.commands.get("help").execute(playerName, playerMessage);
+
+        if (playerMessageLower.contains(Bot.COMMAND)) {
+            if (playerMessageLower.substring(playerMessageLower.indexOf(Bot.COMMAND)).length() < Bot.COMMAND.length() + 1) {
+                Bot.commands.get("help").execute(playerName, playerMessageLower);
                 return;
             }
 
-            int subCommandBegin = playerMessage.indexOf(Bot.COMMAND) + Bot.COMMAND.length() + 1;
-            String subCommand = playerMessage.substring(subCommandBegin);
+            int subCommandBegin = playerMessageLower.indexOf(Bot.COMMAND) + Bot.COMMAND.length() + 1;
+            String subCommand = playerMessageLower.substring(subCommandBegin);
             if (subCommand.contains(" "))
                 subCommand = subCommand.substring(0, subCommand.indexOf(" "));
 
             for (String commandName : Bot.commands.keySet()) {
                 if (commandName.equals(subCommand)) {
-                    Bot.commands.get(commandName).execute(playerName, playerMessage);
+                    Bot.commands.get(commandName).execute(playerName, playerMessageLower);
                     return;
                 }
             }
