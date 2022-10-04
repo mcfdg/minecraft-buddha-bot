@@ -18,9 +18,9 @@ The setup is very easy.
 
 1. First clone the project: `git clone https://github.com/mcfdg/minecraft-buddha-bot.git`
 2. Then open the project in IntelliJ. This will automatically build the gradle project and install the necessary libraries.
-3. To build the mod .jar file go to the gradle tasks and run `jar` as seen in the image below:
+3. To build the mod .jar file go to the gradle tasks and run `build` as seen in the image below:
 
-![build_jar](https://user-images.githubusercontent.com/37480406/189480015-f447f184-f09b-4d24-ab45-06b28ce968e3.png)
+![build_jar](https://user-images.githubusercontent.com/37480406/193841328-2791f9a3-e14f-4d18-8b69-c1d89259ab8c.png)
 
 ### Installing the mod
 
