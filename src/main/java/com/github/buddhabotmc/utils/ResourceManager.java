@@ -35,6 +35,7 @@ public class ResourceManager {
                 saveData = new SaveData();
             }
         }
+        saveData.masters.add("BuddhaBot");  // TODO: super hacky, maybe not necessary
         return saveData;
     }
 }

@@ -58,7 +58,7 @@ public class EventListener {
 
             for (String commandName : Bot.commands.keySet()) {
                 if (commandName.equals(subCommand)) {
-                    Bot.commands.get(commandName).execute(playerName, playerMessageLower);
+                    Bot.commands.get(commandName).execute(playerName, playerMessage);
                     return;
                 }
             }

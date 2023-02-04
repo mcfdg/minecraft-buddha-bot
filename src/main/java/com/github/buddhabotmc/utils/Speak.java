@@ -15,7 +15,7 @@ public class Speak {
         SaveData saveData = ResourceManager.getSaveData();
 
         saveData.chatMemory = saveData.chatMemory + " \\n " + playerName + ": " + message;
-        saveData.chatMemory = saveData.chatMemory + " \\n Friendly dude:";
+        saveData.chatMemory = saveData.chatMemory + " \\n BuddhaBot:";
 
         String response = Speak.executePost
                 (

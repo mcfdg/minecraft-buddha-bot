@@ -30,7 +30,7 @@ public abstract class Command {
 
     boolean isMaster(String playerName) {
         boolean isMaster = false;
-        for (String user : Bot.MASTERS) {
+        for (String user : ResourceManager.getSaveData().masters) {
             if (user.equals(playerName)) {
                 isMaster = true;
                 break;

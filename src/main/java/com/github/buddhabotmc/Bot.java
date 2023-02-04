@@ -43,11 +43,6 @@ public class Bot {
     public static final String PATH_SAVEDATA = "\\home\\buddhabot\\Documents\\buddha_bot_data";
 
     /**
-     * Define who are the bot masters. These people can use master commands. (It includes the bot itself.)
-     */
-    public static final String[] MASTERS = new String[]{BOTACCOUNT};
-
-    /**
      * To set the API key, add it to the environment variables with name `GOOSEAI_API_KEY`
      */
     public static String GOOSEAI_API_KEY = "Bearer " + System.getenv().get("GOOSEAI_API_KEY");
@@ -68,6 +63,7 @@ public class Bot {
         add(new SetPrice());
         add(new Remove());
         add(new UserList());
+        add(new AddMaster());
     }};
 
     public static HashMap<String, Command> commands = new HashMap<String, Command>();
